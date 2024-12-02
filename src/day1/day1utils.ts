@@ -1,4 +1,3 @@
-
 export function distanceBetweenTwoNumbers(arg0: number, arg1: number): number {
   return Math.abs(arg0 - arg1);
 }
@@ -21,7 +20,10 @@ export function summedDistanceBetweenTwoNumbersAfterOrderingArray(
   return totalDistance;
 }
 
-export function occurancesOfNumberInArray(arg0: number, arg1: number[]): number {
+export function occurancesOfNumberInArray(
+  arg0: number,
+  arg1: number[]
+): number {
   let count = 0;
 
   for (const item of arg1) {
@@ -43,7 +45,7 @@ export function totalSimilarityScore(arg0: number[], arg1: number[]): number {
   return totalScore;
 }
 
-export function parseData(data: string): [number[], number[]] {
+export function parseDay1Data(data: string): [number[], number[]] {
   const lines = data.split("\n");
 
   const leftList: number[] = [];
