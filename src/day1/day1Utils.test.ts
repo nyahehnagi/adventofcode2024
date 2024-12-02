@@ -2,6 +2,7 @@ import { distanceBetweenTwoNumbers } from './day1Utils';
 import { summedDistanceBetweenTwoNumbersAfterOrderingArray } from './day1Utils';
 import { occurancesOfNumberInArray } from './day1Utils';
 import { totalSimilarityScore } from './day1Utils';
+import { parseData } from './day1Utils';
 
 describe('Advent of Code 2024 Day 1', () => {
   test('total distance between 2 numbers only', () => {
@@ -31,5 +32,12 @@ describe('Advent of Code 2024 Day 1', () => {
     const array1 = [3 ,4, 2, 1, 3, 3];
     const array2 = [4, 3, 5, 3, 9, 3];
     expect(totalSimilarityScore(array1, array2)).toEqual(31);
+  });
+
+  test('parse data for Day 1', () => {
+    const data = '3 4\n2 1\n3 3';
+    const [leftList, rightList] = parseData(data);
+    expect(leftList).toEqual([3, 2, 3]);
+    expect(rightList).toEqual([4, 1, 3]);
   });
 });
