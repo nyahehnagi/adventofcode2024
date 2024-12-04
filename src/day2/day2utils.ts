@@ -215,9 +215,6 @@ export function isSafeLineOfDataPart2(data: number[]): boolean {
 
   // if we are here, then this is because the indexes are the same.
 
-
-
-
   return false;
   // 544 is the answer.. but my code does not work it out properly.. hmm
   // 541 is to low
